@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Order Summary"
-            android:id="@+id/bigordersumm"
+            android:id="@+id/screentitle1"
             android:textSize="50dp"
             android:textIsSelectable="false"
             android:textAlignment="center"
@@ -65,7 +65,7 @@
             android:textAlignment="center"
             android:maxLines="2"
             android:layout_marginTop="30dp"
-            android:layout_below="@+id/bigordersumm"
+            android:layout_below="@+id/screentitle1"
             android:layout_centerHorizontal="true" />
 
         //Order one text
@@ -123,7 +123,7 @@
             android:minWidth="100dp"
             android:layout_marginTop="39dp"
             android:layout_below="@+id/details1"
-            android:layout_alignEnd="@+id/bigordersumm" />
+            android:layout_alignEnd="@+id/screentitle1" />
 
         //Back button
         <Button
@@ -138,7 +138,7 @@
             android:minHeight="35dp"
             android:minWidth="100dp"
             android:layout_alignTop="@+id/placeorderbuttonbutton"
-            android:layout_alignStart="@+id/bigordersumm" />
+            android:layout_alignStart="@+id/screentitle1" />
 
     </RelativeLayout>
 </ScrollView>

@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Order Confirmation"
-            android:id="@+id/bigordersumm"
+            android:id="@+id/screentitle1"
             android:textSize="45dp"
             android:textIsSelectable="false"
             android:textAlignment="center"
@@ -63,8 +63,7 @@
             android:text="Thank you for your order! Your order has been been placed."
             android:id="@+id/summaryinstruct"
             android:maxLines="2"
-            android:layout_marginBottom="37dp"
-            android:layout_above="@+id/placeorderbuttonbutton"
+            android:layout_below="@+id/checkmark"
             android:layout_centerHorizontal="true" />
 
 
@@ -72,28 +71,45 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Place Order"
-            android:id="@+id/placeorderbuttonbutton"
+            android:text="On my way!"
             android:fontFamily="sans-serif-light"
             android:background="@drawable/buttonlayout"
             android:height="11dp"
             android:width="100dp"
-            android:layout_marginBottom="44dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:clickable="true"
-            android:onClick="selectRestaurant" />
+            android:onClick="selectRestaurant"
+            android:textSize="11dp"
+            android:id="@+id/omwbutton"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/summaryinstruct"
+            android:layout_alignStart="@+id/checkmark" />
 
         //Check mark picture
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/check"
-            android:id="@+id/imageView2"
-            android:minWidth="100dp"
-            android:minHeight="100dp"
+            android:id="@+id/checkmark"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
+
+
+        //Pick up later button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick up later"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/buttonlayout"
+            android:height="11dp"
+            android:width="100dp"
+            android:clickable="true"
+            android:onClick="selectRestaurant"
+            android:textSize="11dp"
+            android:id="@+id/pulbutton"
+            android:layout_alignBottom="@+id/omwbutton"
+            android:layout_alignEnd="@+id/checkmark"
+            android:layout_marginEnd="32dp" />
 
     </RelativeLayout>
 </ScrollView>
